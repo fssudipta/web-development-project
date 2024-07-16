@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Music - Musicophilia</title>
+    <link rel="stylesheet" href="your_music.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="site-title"
+            >Music<span class="logo-subtitle">ophilia</span></span
+          >
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="your_music.html">Your Music</a></li>
+            <li><a href="#">New Music</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Charts</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="your-music-section">
+        <h1>Your Music Collection</h1>
+        <form id="music-form">
+          <label for="music-title">Music Title:</label>
+          <input type="text" id="music-title" required />
+          <label for="artist-name">Artist Name:</label>
+          <input type="text" id="artist-name" required />
+          <button type="submit">Add Music</button>
+        </form>
+        <ul id="music-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Musicophilia. All rights reserved.</p>
+    </footer>
+
+    <script src="your_music.js"></script>
+  </body>
+</html>

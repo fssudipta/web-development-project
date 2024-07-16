@@ -1,0 +1,190 @@
+/* General styles */
+body {
+    font-family: 'Playwrite FR Moderne', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    /* Light blue background */
+    color: #333;
+    /* Dark text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3b82b8;
+    /* Darker blue */
+}
+
+/* Header styles */
+header {
+    background-color: #71aceb;
+    /* Primary blue */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    /* White text */
+}
+
+.nav-logo .site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-logo .logo-subtitle {
+    font-weight: normal;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    /* White text */
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding-top: 80px;
+    /* Adjust for fixed header */
+    text-align: center;
+}
+
+.your-music-section {
+    padding: 40px;
+}
+
+#music-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#music-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#music-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#music-form button {
+    background-color: #71aceb;
+    /* Primary blue */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#music-form button:hover {
+    background-color: #3b82b8;
+    /* Darker blue on hover */
+}
+
+#music-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#music-list li {
+    background-color: #f0f4f8;
+    /* Light grey */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#music-list .delete-button {
+    background-color: #e57373;
+    /* Red button */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#music-list .delete-button:hover {
+    background-color: #d32f2f;
+    /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .platform-logos {
+        justify-content: center;
+    }
+
+    .best-albums,
+    .review-section {
+        padding: 20px;
+    }
+
+    .album-buttons {
+        flex-wrap: wrap;
+    }
+
+    .album-buttons button {
+        margin: 10px 5px;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile-section form {
+        padding: 20px;
+    }
+}
